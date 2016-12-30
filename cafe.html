@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<title>The Coffee Academics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/> -->
+<style>
+  body, html {
+    height: 100%;
+    font-family: 'Didact Gothic', sans-serif;
+    
+
+
+  }
+  div ~ p {
+
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    border-radius: 5px;
+
+  }
+
+
+  .mySlides {display:none}
+  .w3-left, .w3-right, .w3-badge {cursor:pointer}
+  .w3-badge {height:13px;width:13px;padding:0}
+
+  .bgimg {
+    background-position: left;
+    background-size: center;
+    background-repeat: no-repeat;
+    background-image: url("collage.jpg");
+    min-height: 100%;
+  }
+
+
+  .menu {
+    display: none;
+  }
+</style>
+<body>
+
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black w3-large">
+      <div class="w3-col s2">
+        <a href="#" class="w3-btn-block w3-hover-white">Начална страница</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="#about" class="w3-btn-block w3-hover-white">За нас</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="#menu" class="w3-btn-block w3-hover-white">Меню</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="#where" class="w3-btn-block w3-hover-white">Къде сме?</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="#promotions" class="w3-btn-block w3-hover-white">Промоции</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="#good" class="w3-btn-block w3-hover-white">Добро дело</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+ <div class="w3-display-bottomleft w3-center w3-padding-xlarge w3-hide-small">
+   <span class="w3-text"><strong> Отворено: 08:00ч. - 22:00ч. </strong></span>
+ </div>
+ <div class="w3-display-bottomright w3-center w3-padding-xlarge">
+   <span class="w3-text"><strong>бул. Приморски парк II 48, 9010 Варна</strong></span>
+ </div>
+</header>
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-lightgray w3-large">
+
+  <!-- About Container -->
+  <div class="w3-container" id="about">
+    <div class="w3-content" style="max-width:700px">
+      <div class="w3-container w3-center">
+        <h5 class="w3-center w3-padding-48"><div class="w3-tag w3-round w3-black" style="padding:5px">
+          <div class="w3-tag w3-round w3-black w3-border w3-border-white">
+           ЗА НАС
+         </div>
+       </div></h5>
+     </div>
+
+     <p >Launched in 2012, The Coffee Academïcs has since made a name for itself on the regional and international coffee scene. We are proud to offer a collection of exquisite coffee products and expert services that cater to curious coffee novices and discerning coffee connoisseurs alike. From the initial selection of coffee origin and roasting method, to the micro-tuning of blend proportion and cupping, each step is done with care, passion and an uncompromising quest for top quality. Combined with state-of-the-art brewing techniques, accessories and allied products, we are the most streamlined yet dynamic specialty coffee concept in Hong Kong.
+     </p>
+     <p>As part of our intellectual pursuit of the perfect coffee, we strive to find new ways of connecting with our consumers. Whether you’re in the comfort of home, stuck at the office or globe-trotting, The Coffee Academïcs is within your reach.</p>
+
+     <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>""Вярвам, че хората сме постигнали много не защото сме умни, а защото имаме палци, които ни позволяват да направим кафе."</i></p>
+      <p>Флаш Розенберг</p>
+    </div>
+
+
+    <div class="w3-container">
+      <div class="w3-content w3-display-container" style="max-width:700px">
+        <img class="mySlides" src="thumb_54aa13960f8fd.jpg" style="width:100%">
+        <img class="mySlides" src="25787947373_420b646822_b.jpg" style="width:100%">
+        <img class="mySlides" src="26364794316_55b63bac59_b.jpg" style="width:100%">
+        <img class="mySlides" src="27792632572_ef7555846d_o.jpg" style="width:100%">
+        <img class="mySlides" src="coffee-class.jpg" style="width:100%">
+        <img class="mySlides" src="pancake2.jpg" style="width:100%">
+        <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+        </div>
+      </div>
+      <p><strong>Работно време:</strong> Всеки ден от 08:00ч. до 22:00ч. </p>
+      <p><strong>Адрес:</strong> бул. Приморски парк II 48, 9010 Варна</p>
+    </div>
+  </div>
+
+  <!-- Menu Container -->
+  <div class="w3-container" id="menu">
+   <div class="w3-content" style="max-width:700px">
+    <div class="w3-container w3-center">
+      <h5 class="w3-center w3-padding-48"><div class="w3-tag w3-round w3-black" style="padding:5px">
+        <div class="w3-tag w3-round w3-black w3-border w3-border-white">
+         МЕНЮ
+       </div>
+     </div></h5>
+
+     <div class="w3-row w3-center w3-card-2 w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col w3-lightgray s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col w3-lightgray s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-pale-red w3-padding-48 w3-card-16">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+
+      <h5>Honey Almond Granola with Fruits</h5>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+
+      <h5>Belgian Waffle</h5>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+
+      <h5>Scrambled eggs</h5>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+
+      <h5>Blueberry Pancakes</h5>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-pale-red w3-padding-48 w3-card-16">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="join-us.png" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+ <div class="w3-content" style="max-width:700px">
+  <div class="w3-container w3-center">
+    <h5 class="w3-center w3-padding-48"><div class="w3-tag w3-round w3-black" style="padding:5px">
+      <div class="w3-tag w3-round w3-black w3-border w3-border-white">
+        КЪДЕ СМЕ?
+      </div>
+    </div></h5>
+    <p>Намерете ни на адрес.<br>бул. Приморски парк II 482, 9010 Варна</p>
+    <div id="googleMap" class="w3-normal" style="width:100%;height:400px;"></div>
+    <p><span class="w3-tag">Важно!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Резеревирайте</strong> маса, попитайте за "специалитета на деня"" или просто изпратете допълнително съобщение:</p>
+    <form action="form.asp" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Име" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Брой " required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Дата и час" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Искате ли да допълните нещо?" required name="Message"></p>
+      <p><button class="w3-btn w3-padding" type="submit">Изпрати заявка</button></p>
+    </form>
+  </div>
+</div>
+
+<div class="w3-container" id="promotions">
+ <div class="w3-content" style="max-width:700px">
+  <div class="w3-container w3-center">
+    <h5 class="w3-center w3-padding-48"><div class="w3-tag w3-round w3-black" style="padding:5px">
+      <div class="w3-tag w3-round w3-black w3-border w3-border-white">
+       ПРОМОЦИИ
+     </div>
+   </div></h5>
+   <p></p>
+   <p></p>
+   <div class="w3-panel w3-leftbar w3-light-grey">
+    <p><i></i></p>
+    <p>/p>
+    </div>
+    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Работно време:</strong> Всеки ден от 08:00ч. до 22:00ч. </p>
+    <p><strong>Адрес:</strong> бул. Приморски парк II 482, 9010 Варна</p>
+  </div>
+</div>
+
+<div class="w3-container" id="good">
+  <div class="w3-content" style="max-width:700px">
+    <div class="w3-container w3-center">
+      <h5 class="w3-center w3-padding-48"><div class="w3-tag w3-round w3-black" style="padding:5px">
+        <div class="w3-tag w3-round w3-black w3-border w3-border-white">
+         ДОБРО ДЕЛО
+       </div>
+     </div></h5>
+     <p></p>
+     <p></p>
+     <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i></i></p>
+      <p></p>
+    </div>
+    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Работно време:</strong> Всеки ден от 08:00ч. до 22:00ч. </p>
+    <p><strong>Адрес:</strong> бул. Приморски парк II 482, 9010 Варна</p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-50 w3-light-grey w3-center w3-opacity w3-small" style="margin-top:150px"> 
+<div class="w3-row w3-small">
+  <div class="w3-col s2 ">
+    <a href="#" class="w3-btn w3-hover-white">Начална страница</a>
+  </div>
+  <div class="w3-col s2">
+    <a href="#about" class="w3-btn w3-hover-white ">За нас</a>
+  </div>
+  <div class="w3-col s2">
+    <a href="#menu" class="w3-btn w3-hover-white">Меню</a>
+  </div>
+  <div class="w3-col s2">
+    <a href="#where" class="w3-btn w3-hover-white">Къде сме?</a>
+  </div>
+  <div class="w3-col s2">
+    <a href="#promotions" class="w3-btn w3-hover-white">Промоции</a>
+  </div>
+  <div class="w3-col s2">
+    <a href="#good" class="w3-btn w3-hover-white">Добро дело</a>
+  </div>
+</div>
+<br>
+<br>
+<p class="w3-medium"> Последвайте ни в: <p>
+  <a href="https://www.instagram.com/thecoffeeacademics/" target="_blank"><i class="fa fa-instagram w3-text-purple w3-xxlarge"></i></a>
+  <a href="https://www.facebook.com/TheCoffeeAcademics" target="_blank"><i class="fa fa-facebook-official w3-text-indigo w3-xxlarge"></i></a>
+
+  <p class="w3-medium">Copyright &copy; Made with Love &amp; Caffeine by Fanny&amp;Poli.<br> All Rights Reserved.<a href="http://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green"></a></p>
+
+</footer>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+// Google Map Location
+var myCenter = new google.maps.LatLng(43.215279, 27.954814);
+
+function initialize() {
+  var mapProp = {
+    center: myCenter,
+    zoom: 12,
+    scrollwheel: true,
+    draggable: true,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+
+  marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+     }
+     for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" w3-white", "");
+     }
+     x[slideIndex-1].style.display = "block";  
+     dots[slideIndex-1].className += " w3-white";
+   }
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
+ }
+ tablinks = document.getElementsByClassName("tablink");
+ for (i = 0; i < x.length; i++) {
+   tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+ }
+ document.getElementById(menuName).style.display = "block";
+ evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
